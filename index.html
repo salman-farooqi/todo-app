@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Tensai Todo App</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- header -->
+            <div class="header">
+                <div class="header__wrapper">
+                    <a href="#"
+                        ><img src="./images/logo.svg" alt="Logo" class="logo"
+                    /></a>
+                    <h1>Tensai Todo App</h1>
+                    <div class="timer" id="timer">
+                        <div class="time">11:28:33 PM</div>
+                        <div class="date">11 Nov, 2023</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <!-- dashboard -->
+                <div class="dashboard">
+                    <div class="dashboard__creds">
+                        <input
+                            type="text"
+                            placeholder="User Name"
+                            class="username"
+                            id="todo-name"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Task"
+                            class="task"
+                            id="todo-task"
+                        />
+                        <a class="btn">Add</a>
+                    </div>
+
+                    <div class="dashboard__todos">
+                        <div class="dashboard__todos-head">
+                            <h2>
+                                <span class="todos-title">All Todos</span>
+                                (<span class="todos-count">0</span>)
+                            </h2>
+                            <div class="progress-bars">
+                                <div class="progress-bars__all todo-active">
+                                    All
+                                </div>
+                                <div class="progress-bars__completed">
+                                    Completed
+                                </div>
+                                <div class="progress-bars__incompleted">
+                                    Incomplete
+                                </div>
+                                <div class="progress-bars__deleted">
+                                    Deleted
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard__todos-content" id="todos"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
